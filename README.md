@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Restaurant Booking System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The Restaurant Booking System is a web application that enables users to search for restaurants, make reservations, and allows restaurant owners to register their establishments and manage bookings. The application is divided into two main sections: **Customer** and **Restaurant Owner**.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Customer Section
+- **Search Restaurants:** 
+  - Users can search for restaurants based on various criteria:
+    - Restaurant name
+    - City
+    - Cuisine type (Veg/Non-Veg)
+    - Minimum rating
+  - A default search will return all available restaurants.
 
-### `npm start`
+- **Book a Table:**
+  - Upon selecting a restaurant, users can input:
+    - Number of people
+    - Date for the reservation
+  - Available slots will be displayed for selection.
+  - The system handles concurrent bookings, and if a slot is taken, an exception is thrown.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Restaurant Owner Section
+- **Register Restaurant:**
+  - Owners can register their restaurant with the following details:
+    - **Name:** `string`
+    - **Address:** 
+      - Street: `string`
+      - City: `string`
+      - State: `string`
+      - Pin Code: `string`
+    - **Type:** `string` (e.g., Veg, Non-Veg)
+    - **Cost for Two:** `string`
+    - **Cuisines:** `array of strings`
+    - **Tables:** `array of objects`
+  
+- **Manage Slots:**
+  - After registering a restaurant, owners can add time slots for table bookings.
+  - Currently, there is no logic to check for duplicate restaurant names, but this will be implemented in future updates.
+  - Existing slots are not shown; the current implementation overrides any previous slots.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Future Enhancements
+- Implement logic to prevent the creation of restaurants with the same name.
+- Enhance the slots management system to display existing slots before adding new ones.
+- General checks and validations for restaurant registration and booking processes.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
