@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/restaurantbooking/static/css/main.5fafc080.css",
+    "main.js": "/restaurantbooking/static/js/main.0b8843ff.js",
+    "static/js/453.8ec91191.chunk.js": "/restaurantbooking/static/js/453.8ec91191.chunk.js",
+    "index.html": "/restaurantbooking/index.html",
+    "main.5fafc080.css.map": "/restaurantbooking/static/css/main.5fafc080.css.map",
+    "main.0b8843ff.js.map": "/restaurantbooking/static/js/main.0b8843ff.js.map",
+    "453.8ec91191.chunk.js.map": "/restaurantbooking/static/js/453.8ec91191.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fafc080.css",
+    "static/js/main.0b8843ff.js"
+  ]
+}
